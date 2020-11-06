@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardViewRecipe"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recipe_thumbnail"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentStart="true"
+                app:civ_border_width=".5dp"
+                app:civ_border_color="#FF000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipeTitle"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/recipe_thumbnail"
+                android:text="sdfhngsdjkfgnh"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipeDetails"
+                android:layout_toRightOf="@id/recipe_thumbnail"
+                android:layout_below="@id/recipeTitle"
+                android:text="sdfhngsdjkfgnh"
+                android:layout_marginLeft="5dp"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/checkArchive"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Archive"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/star_50px"
+                android:layout_below="@id/checkArchive"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/container"
+      android:layout_above="@id/layNavigation"
+
+      />
+    <LinearLayout
+        android:id="@+id/layNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+       >
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnHome"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="15sp"
+            app:backgroundTint="@android:color/transparent"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="1dp" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnFavourite"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Favourites"
+            android:textSize="15sp"
+            app:backgroundTint="@android:color/transparent"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+</RelativeLayout>
