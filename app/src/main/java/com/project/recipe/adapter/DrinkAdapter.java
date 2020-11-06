@@ -79,7 +79,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<DrinkAdapter.MyViewHolder
         else
             holder.isAlcoholic.setChecked(false);
 
-        Glide.with(mContext).load(new File(drink.getStrDrinkThumb()).getAbsolutePath()).asBitmap().into(holder.imageThumbnail);
+        Glide.with(mContext).load(drink.getStrDrinkThumb()).into(holder.imageThumbnail);
         if(dbManager.isRecipeExists(drink.getIdDrink()))
             holder.imgFav.setImageResource(R.drawable.star_filled_24px);
         else
