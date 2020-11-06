@@ -36,5 +36,11 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     //circularImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //volley
+    implementation 'com.android.volley:volley:1.1.1'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
 
 }

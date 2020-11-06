@@ -27,37 +27,47 @@
                 app:civ_border_width=".5dp"
                 app:civ_border_color="#FF000000"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/recipeTitle"
                 android:textStyle="bold"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
-                android:layout_toRightOf="@id/recipe_thumbnail"
+                android:layout_toEndOf="@id/recipe_thumbnail"
+                android:layout_toStartOf="@id/checkAlcoholic"
                 android:text="sdfhngsdjkfgnh"
                 android:layout_marginLeft="5dp"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/recipeDetails"
+                android:layout_toEndOf="@id/recipe_thumbnail"
                 android:layout_toRightOf="@id/recipe_thumbnail"
                 android:layout_below="@id/recipeTitle"
                 android:text="sdfhngsdjkfgnh"
+                android:textColor="@android:color/black"
+                android:layout_toStartOf="@id/fav"
+                android:layout_marginRight="3dp"
                 android:layout_marginLeft="5dp"
                 />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:id="@+id/checkArchive"
+                android:id="@+id/checkAlcoholic"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:text="Archive"/>
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:text="Alcoholic"/>
             <ImageView
+                android:id="@+id/fav"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/star_50px"
-                android:layout_below="@id/checkArchive"/>
+                android:layout_margin="3dp"
+                android:layout_below="@id/checkAlcoholic"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
